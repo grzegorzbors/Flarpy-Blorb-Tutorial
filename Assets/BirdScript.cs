@@ -28,16 +28,14 @@ public class BirdScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        logic.gameOver();
-        Destroy(bird);
+        logic.gameOver(false);
     }
 
     private void CheckBirdOutOfBounds()
     {
         if (bird.transform.position.y > 16 || bird.transform.position.y < -16)
         {
-            logic.gameOver();
-            Destroy(bird);
+            logic.gameOver(true);
         }
     }
 }

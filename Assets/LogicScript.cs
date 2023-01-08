@@ -11,7 +11,7 @@ public class LogicScript : MonoBehaviour
     public Text scoreText;
     public GameObject gameOverScreen;
     public bool birdIsAlive = true;
-
+    public GameObject bird;
     public AudioSource audioSource;
 
     [ContextMenu("Increase Score")]
@@ -27,9 +27,14 @@ public class LogicScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         birdIsAlive = true;
     }
-    public void gameOver()
+    public void gameOver(bool destroy)
     {
         gameOverScreen.SetActive(true);
         birdIsAlive = false;
+
+        if (destroy)
+        {
+            Destroy(bird);
+        }
     }
 }

@@ -1010,6 +1010,8 @@ MonoBehaviour:
   scoreText: {fileID: 887322346}
   gameOverScreen: {fileID: 1430217411}
   birdIsAlive: 1
+  bird: {fileID: 749816437}
+  audioSource: {fileID: 970330068}
 --- !u!4 &1451220291
 Transform:
   m_ObjectHideFlags: 0
