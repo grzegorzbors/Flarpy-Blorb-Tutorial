@@ -6,7 +6,8 @@ public class PipeSpawnScript : MonoBehaviour
 {
 
     public GameObject pipe;
-    public float spawnRate = 3;
+    [SerializeField] GameObject cloud;
+    public float spawnRate = 2;
     private float timer = 0;
     public float heightOffset = 10;
 
