@@ -16,6 +16,7 @@ public class CloudScript : MonoBehaviour
     {
         _speed = speed;
         _endPositionX = endPositionX;
+    
     }
 
     // Update is called once per frame

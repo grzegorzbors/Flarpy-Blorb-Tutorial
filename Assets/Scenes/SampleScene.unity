@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 749816440}
-  flapStrength: 10
+  flapStrength: 7
   logic: {fileID: 1451220290}
   bird: {fileID: 749816437}
 --- !u!81 &749816443
@@ -999,14 +999,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82fa8b93638e6a48a9a9214ab7bac8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clouds:
-  - {fileID: 1766712710429770231, guid: 2891ee5fb277493448b2f2eb0ce35cbe, type: 3}
-  - {fileID: 8756162258116793944, guid: 730cc011b7f8d9d4fa9439e9e7a5801c, type: 3}
-  - {fileID: 6372920156169428300, guid: 9e19e5885b1d82147b9f8076b9418cd5, type: 3}
-  - {fileID: 5759975720965984735, guid: 93d765e4d09fe684b986b3933c3caf41, type: 3}
+  cloud: {fileID: 1766712710429770231, guid: 2891ee5fb277493448b2f2eb0ce35cbe, type: 3}
   endPoint: {fileID: 1040305684}
+  spawnInterval: 3
   speed: 2
-  omgWtfTime: 4
 --- !u!4 &1248421575
 Transform:
   m_ObjectHideFlags: 0
@@ -1015,7 +1011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248421573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.97, y: 9.05, z: 0}
+  m_LocalPosition: {x: 32, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
